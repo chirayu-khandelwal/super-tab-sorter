@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Peter White">
+    <title>Super Tab Sorter: Welcome</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <div class="container bg-light">
+        <h3 class="navbar-brand h3">Super Tab Sorter</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="options.html">Settings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="userguide.html">User Guide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <div id="welcome-message" class="d-none">
+                    <h3>Welcome to Super Tab Sorter!</h3>
+                    <p>Please review the <a href="userguide.html">User Guide</a> before getting started.</p>
+                    <p>You can right-click on the extension icon and select "Options" at any time to configure extension settings and review the user guide.</p>
+                </div>
+                <div id="update-message" class="d-none">
+                    <h3>Super Tab Sorter has been updated to v<span id="version"></span>!</h3>
+                    <p>This version uses the new Chrome manifest v3 API (major architectural change) and adds direct support for Chrome's tab groups feature.</p>
+                    <p>It also adds optional duplicate tab removal (during sorting) and Sort By URL sorts by root domain and sub-sorts by host name.</p>
+                    <p>Please review the updated <a href="userguide.html">User Guide</a> to learn more about the latest changes.</p>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="jquery-3.7.1.slim.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="welcome.js"></script>
+</body>
+
+</html>
